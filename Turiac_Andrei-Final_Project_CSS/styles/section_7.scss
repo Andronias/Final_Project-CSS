@@ -1,0 +1,60 @@
+.section7__cards-container {
+	margin-top: 30px;
+	@include flexStyle(row, center, center);
+	gap: 20px;
+
+	.card {
+		@include flexStyle(column, center, center);
+		gap: 10px;
+		background: linear-gradient($dark-red, $dark-purple);
+		color: $white;
+		padding: 15px 20px;
+		border-radius: 16px;
+
+		&:nth-child(2) {
+			padding: 40px 25px 30px 25px;
+		}
+
+		&-title {
+			font-size: 22px;
+			font-weight: 400;
+		}
+	}
+
+	.signup-btn {
+		border: none;
+		background: none;
+		color: $white;
+		border-radius: 8px;
+
+		&:hover {
+			color: black;
+			background-color: pink;
+			transition: 0.5s;
+			cursor: pointer;
+		}
+	}
+}
+
+.recommended {
+	color: $darker-pink;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.price-value {
+	color: $light-blue;
+}
+
+.benefit,
+.signup-btn {
+	@include flexStyle(row, left, center);
+	margin-left: 35px;
+	margin-bottom: 3px;
+	gap: 5px;
+}
+
+.signup-btn {
+	margin-top: 20px;
+	font-size: 18px;
+}

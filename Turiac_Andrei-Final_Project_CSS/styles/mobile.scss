@@ -1,0 +1,86 @@
+@media screen and (max-width: 670px) {
+	.section1 {
+		text-align: center;
+		.mobilemenu-btn {
+			display: flex;
+		}
+
+		.nav-items {
+			@include flexStyle(column, center, center);
+			gap: 30px;
+		}
+		.coding-image {
+			height: 80vw;
+		}
+		.website-description {
+			inline-size: 90vw;
+			overflow-wrap: break-word;
+		}
+
+		button {
+			margin-bottom: 20px;
+		}
+	}
+	.section2 {
+		.card-text {
+			max-width: 70vw;
+		}
+	}
+
+	.section3__img-container {
+		flex-direction: column;
+		margin-bottom: 20px;
+		.section3__robot-img {
+			width: 90vw;
+		}
+	}
+
+	.section5 {
+		gap: 20px;
+		&__right-container {
+			padding: 20px;
+		}
+		.left-container__img {
+			width: 80vw;
+		}
+
+		&__cards-container {
+			@include flexStyle(row, center, center);
+		}
+
+		.card-text {
+			width: auto;
+		}
+	}
+
+	.section6,
+	.section7__cards-container,
+	.section5__right-container,
+	.section5 {
+		padding: 2vw;
+	}
+
+	.section8 {
+		form {
+			@include flexStyle(column, center, center);
+			height: auto;
+
+			input,
+			textarea {
+				margin-right: 0;
+				width: 80vw;
+			}
+		}
+	}
+
+	footer {
+		height: auto;
+		gap: 20px;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		.footer-links {
+			gap: 5px;
+		}
+	}
+}

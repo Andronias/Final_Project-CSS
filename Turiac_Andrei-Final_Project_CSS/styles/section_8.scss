@@ -1,0 +1,56 @@
+.section8 {
+	padding: 0px 30px;
+
+	&__container {
+		@include flexStyle(row, center, center);
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+
+	hr {
+		margin: 0 auto 10px auto;
+	}
+
+	.send-btn {
+		font-size: 16px;
+		height: 30px;
+		width: 200px;
+		border-radius: 20px;
+		background: linear-gradient($darker-pink, $section-title-color);
+
+		&:hover {
+			cursor: pointer;
+			color: $white;
+			transition: 0.18s;
+		}
+	}
+}
+
+form {
+	@include flexStyle(column, flex-start, center);
+	gap: 10px;
+	flex-wrap: wrap;
+	margin: 0;
+	height: 160px;
+	width: 800px;
+	color: red;
+}
+
+input {
+	width: 220px;
+	height: 24px;
+	margin-right: -80px;
+}
+
+.typing-img {
+	width: 250px;
+	display: block;
+}
+
+input,
+.message-input {
+	resize: none;
+	font-family: $font-stack;
+	padding: 2px 5px;
+	border: 1px solid $grey;
+}

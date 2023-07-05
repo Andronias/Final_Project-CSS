@@ -1,0 +1,51 @@
+.section6 {
+	background-color: $light-grey;
+	padding: 80px 0 50px 0;
+}
+
+.section6__cards-container {
+	@include flexStyle(row, center, center);
+	gap: 30px;
+	margin-top: 25px;
+
+	.card {
+		padding: 20px 30px 20px 20px;
+		width: 375px;
+		border: 2px solid $light-orange;
+		position: relative;
+		border-radius: 12px;
+		box-shadow: 0px 10px 15px 2px $darkest-grey;
+
+		&-title,
+		&-text {
+			text-align: right;
+		}
+
+		&-title {
+			color: $section-title-color;
+		}
+
+		&-text {
+			font-weight: 400;
+			line-height: 1.1;
+		}
+	}
+
+	.quote-icon {
+		position: absolute;
+		height: 22px;
+		top: -9px;
+		right: 150px;
+	}
+}
+
+.author-container {
+	@include flexStyle(row, left, center);
+	line-height: 1.1;
+	font-weight: 500;
+	gap: 5px;
+}
+
+.sensor-icon {
+	height: 25px;
+}

@@ -1,0 +1,84 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap');
+
+/* Variables and common classes import */
+@import 'variables';
+@import 'classes';
+
+/* CSS reset */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: $font-stack;
+}
+
+section {
+	margin-bottom: 70px;
+}
+
+.section-title {
+	font-size: 30px;
+	color: $section-title-color;
+	text-align: center;
+	font-weight: 500;
+}
+
+.section-description {
+	font-size: 18px;
+	color: black;
+	font-weight: 400;
+	text-align: center;
+	max-width: 950px;
+	line-height: 1.6;
+}
+
+hr {
+	width: 100px;
+	height: 2px;
+	border: none;
+	background-color: $pink;
+	margin: 20px auto 10px auto;
+}
+
+.section1__bottom-container,
+.section2__cards-container,
+.section3_img-container,
+.section4__cards-container,
+.section5,
+.section5__cards-container,
+.section6__cards-container,
+.section7__cards-container,
+.section8__container,
+form,
+footer {
+	flex-wrap: wrap;
+}
+
+.whatsapp-img {
+	position: fixed;
+	bottom: 3vh;
+	right: 3vh;
+	height: 10vh;
+	z-index: 1;
+	&:hover {
+		cursor: pointer;
+		scale: 1.2;
+		transition: 0.5s;
+	}
+}
+
+/* Section import */
+@import 'section1';
+@import 'section2';
+@import 'section3';
+@import 'section4';
+@import 'section5';
+@import 'section6';
+@import 'section7';
+@import 'section8';
+@import 'footer';
+@import 'mobile';

@@ -1,0 +1,20 @@
+.section3 {
+	padding: 35px 0;
+	background: linear-gradient($white, #39065a);
+
+	.section3__img-container {
+		margin-top: 25px;
+		@include flexStyle(row, center, center);
+		gap: 60px;
+		flex-wrap: wrap;
+	}
+
+	.section3__robot-img {
+		display: block;
+		width: 400px;
+		&:hover {
+			transform: scale(1.15);
+			transition: 0.5s;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.section5 {
+	padding: 80px 0px 120px 0px;
+	@include flexStyle(row, center, center);
+	background: linear-gradient($purple, $dark-purple);
+	color: $white;
+	gap: 200px;
+	font-size: 18px;
+	flex-wrap: wrap;
+
+	.left-container__img {
+		transition: 2s;
+		&:hover {
+			transform: scaleX(-0.75);
+		}
+	}
+}
+
+.section5__right-container .subtitle {
+	margin-bottom: 30px;
+}
+
+.section5__cards-container {
+	display: flex;
+	max-width: 600px;
+	gap: 20px;
+	flex-wrap: wrap;
+	.card {
+		@include flexStyle(row, center, center);
+		gap: 20px;
+	}
+
+	.card-img {
+		transition: 2s;
+
+		&:hover {
+			transform: scaleY(-0.5);
+			transition: 2s;
+		}
+	}
+
+	.card-text {
+		width: 200px;
+		font-weight: 400;
+	}
+}

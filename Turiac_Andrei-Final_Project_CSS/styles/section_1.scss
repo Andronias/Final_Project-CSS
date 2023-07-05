@@ -1,0 +1,90 @@
+.section1 {
+	background: linear-gradient($purple, $dark-purple);
+	min-height: 100vh;
+	color: $white;
+	padding: 20px 10vw;
+
+	.mobilemenu-btn {
+		height: 10vw;
+		@include flexStyle(row, right, right);
+		display: none;
+	}
+	&__top-container {
+		gap: 200px;
+		margin-bottom: 120px;
+	}
+
+	&__bottom-container {
+		@include flexStyle(row, space-around, center);
+		max-width: 1400px;
+	}
+
+	.coding-image {
+		height: 600px;
+		transition: 0.5s;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+
+	button {
+		font-size: 18px;
+		padding: 10px 25px;
+		border-radius: 20px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+/* Navigation-menu (top-container) */
+.nav-items {
+	gap: 50px;
+	list-style-type: none;
+	font-weight: 400;
+
+	.nav-item a {
+		color: white;
+		text-decoration: none;
+		font-size: 18px;
+
+		&:hover,
+		&:active {
+			border-bottom: 2px solid $dark-purple;
+		}
+	}
+}
+
+.website-description {
+	font-size: 50px;
+	font-weight: 700;
+	width: 500px;
+	line-height: 1.1;
+	margin: 40px 0;
+	position: relative;
+	z-index: 1;
+}
+
+.courses-btn {
+	color: $white;
+	background-color: $pink;
+	border: none;
+	&:hover {
+		color: $pink;
+		background-color: $white;
+		transition: 0.5s;
+	}
+}
+
+.showmore-btn {
+	color: $pink;
+	background-color: transparent;
+	border: 1px solid $pink;
+	&:hover {
+		color: white;
+		background-color: $green;
+		border-color: $white;
+		transition: 0.5s;
+	}
+}

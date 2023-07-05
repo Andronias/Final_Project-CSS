@@ -1,0 +1,28 @@
+footer {
+	background-color: $dark-purple;
+	height: 50px;
+	color: $white;
+	@include flexStyle(row, space-around, center);
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.footer-links {
+	@include flexStyle(row, center, center);
+	color: inherit;
+	list-style-type: none;
+	gap: 30px;
+
+	footer-link,
+	a,
+	&:visited,
+	&:active {
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+.social-container {
+	@include flexStyle(row, center, center);
+	gap: 20px;
+}
